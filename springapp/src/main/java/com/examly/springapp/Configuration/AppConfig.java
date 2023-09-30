@@ -1,15 +1,15 @@
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan(basePackages = "examly") // Replace with your actual package name
 public class AppConfig {
-
-    // Define beans here
 
     @Bean
     public Student student() {
-        return new Student();
+        Student student = new Student();
+        student.setStudentId(1);
+        student.setFirstName("John");
+        student.setLastName("Doe");
+        return student;
     }
 }

@@ -1,13 +1,12 @@
-package com.examly.springapp;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import com.examly.Student; // Replace with your actual package name
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+public class MainApp {
 
-@SpringBootApplication
-public class SpringappApplication {
-
-	public static void main(String[] args) {
-		ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+    public static void main(String[] args) {
+        // Load the Spring application context
+        ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
         // Retrieve the Student bean
         Student student = context.getBean("student", Student.class);
@@ -16,6 +15,5 @@ public class SpringappApplication {
         System.out.println("Student ID: " + student.getStudentId());
         System.out.println("First Name: " + student.getFirstName());
         System.out.println("Last Name: " + student.getLastName());
-	}
-
+    }
 }
