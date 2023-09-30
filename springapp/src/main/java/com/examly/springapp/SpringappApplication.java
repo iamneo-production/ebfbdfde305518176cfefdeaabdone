@@ -1,4 +1,4 @@
-package com.shiva.StudentDB;
+package com.examly.springapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(StudentiD.class, args);
+		SpringApplication.run(SpringBootApplication.class, args);
 	}
 
 }
