@@ -5,7 +5,7 @@
            http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- Define the Student bean -->
-    <bean id="student" class="com.yourpackage.Student">
+    <bean id="student" class="com.examly.Student">
         <!-- Set properties -->
         <property name="studentId" value="1" />
         <property name="firstName" value="John" />
